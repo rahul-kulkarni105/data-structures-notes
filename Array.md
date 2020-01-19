@@ -1,0 +1,21 @@
+## Static and Dynamic Arrays
+- one of the most used ds
+- used as a building block for a lot of other ds
+- Static array = fixed length container having n elements indexable from range [0, n-1]
+- indexable is each slot can be referenced by a number
+- chunk of memory is a contiguous for array
+- Temporarily store objects
+- used as buffers - IP streams
+- Lookup tables and inverse lookup tables - because of indexing property
+- return multiple values from a function, pointer to a ref to an array when you want to return more than one value as one value
+- dynamic programming - cache answers or problems
+
+- Complexity Analysis for static and dynamic arrays:
+  - Access: O(1), O(1)
+  - search: O(n) )(n)
+  - Insertion: n/a O(n)
+  - Appending: n/a O(1)
+  - Deletion: n/a O(n)
+- Dynamic arrays can grow and shrink as needed.
+  - create with initial capacity of some static array
+  - then begin adding elements to it.
