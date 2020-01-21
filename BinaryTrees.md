@@ -75,3 +75,21 @@
         1: is smaller than everything in right subtree. This follows immediately from the definition of being the smallest.
         2: is larger than everything in left subtree because it was found in the right subtree.
     - So there are two possible successors.
+
+- Tree Traversals (Preorder, Inorder, Postorder and Level order)
+  - preorder
+    - prints BEFORE the recursive calls
+    - Print the value of the current node then traverse the lft subtree, followed by the right subtree.
+  - inorder
+    - prints BETWEEN the recursive calls
+    - Traverse the left subtree, then print the value of the node and continue traversing the right subtree.
+    - prints in increasing order in BST
+  - postorder
+    - prints AFTER the recursive calls
+    - traverse the left subtree followed by the right subtree then print the value of the node
+  - Level order
+    - In a level order traversal we want to print the nodes as they appear one layer at a time.
+    - To obtains the ordering we want to do Breadth First Search (BFS) from the root node down to the leaf nodes.
+    - To do a BFS we will need to maintain a Queue of the nodes left to explore.
+    - Begin with the root inside of the queue and finish when the queue is empty.
+    - At each iteration we add the left child and then the right child of the current node to our queue.
