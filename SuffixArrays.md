@@ -41,3 +41,8 @@
     - For each valid combination (window) we perform a range query on the LCP array between the bottom and top endpoints. The LCS will be the maximum LCP value for all possible windows.
     - Luckily, the minimum sliding range query problem can be solved in a told of O(n) time for all windows.
     - alternatively, we can use min range query DS (could be hash table) such as a segment tree to perform queries in log(n) time which may be easier but slightly slower running for a total of O(nlog(n))
+
+ Longest Repeated Substring (LRS)
+ - The brute force method requires O(n²) time and lots of space. Using the information inside the LCP array saves you time and space.
+ - string appears at least twice, hence the longest repeated substring.
+ - Solution is to find all maximum LCP values to get the LRS, there can be more than one substrings.
